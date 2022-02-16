@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Core.Infrastructure.Interfaces.Enums
 {
-    enum Group
+    public enum Group
     {
         IS03,
         IS02,
