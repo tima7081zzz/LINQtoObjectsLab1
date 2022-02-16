@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "/KtVNEJqJMZ3K5YdT3Rs7A5cGOSbyUKx9mrHSqvBiTxsN66CvW3FJev5wvR/TzK2O5BZjR0HMj068Cdwux2bvA==",
+  "success": true,
+  "projectFilePath": "D:\\MY PROGS AMA GANGSTA NAH\\.net univer\\lab1 LINQ to obj\\LINQtoObjectsLab1\\Core\\Core.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\TIMA\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.13\\microsoft.netcore.app.host.win-x64.5.0.13.nupkg.sha512"
+  ],
+  "logs": []
+}
