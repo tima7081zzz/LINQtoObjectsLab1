@@ -7,8 +7,8 @@ namespace Core.Infrastructure.Controllers
 {
     public abstract class BaseController
     {
-        protected virtual IView View { get; set; }
-        protected virtual ICommandModel CommandModel { get; set; }
+        public virtual IView View { get; set; }
+        public virtual ICommandModel CommandModel { get; set; }
         public abstract void Click();
     }
 
