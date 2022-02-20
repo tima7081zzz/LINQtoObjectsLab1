@@ -1,14 +1,12 @@
-using System.Collections.Generic;
-using Core.Models;
+using System;
+using Core.Infrastructure;
 
 namespace Core.View
 {
     public interface IView
     {
-        IEnumerable<Student> Students { get; set; }
-        IEnumerable<Work> Works { get; set; }
-        IEnumerable<Professor> Professors { get; set; }
-        string Result { get; set; }
+        ConsoleColor _color { set; }
+        CommandResponseModel Result { set; }
     }
 
     public interface IConsoleView : IView

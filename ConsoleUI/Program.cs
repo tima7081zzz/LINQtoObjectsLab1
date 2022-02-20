@@ -1,9 +1,6 @@
-﻿using System;
-using ConsoleApp1;
+﻿using ConsoleApp1;
 using Core.Infrastructure.Controllers;
-using Core.Infrastructure.Interfaces;
 using Core.Infrastructure.Interfaces.Enums;
-using Core.Models;
 
 namespace Core
 {
@@ -11,36 +8,55 @@ namespace Core
     {
         static void Main(string[] args)
         {
-            var profs = new Professor[]
-            {
-                new Professor
-                {
-                    FullName = "giga",
-                    Position = Position.Assistant,
-                }
-            };
+            var controller = new ControllerBuilder();
 
-            foreach (var i in profs)
-            {
-                i.Students = new Student[]
-                {
-                    new Student
-                    {
-                        FullName = "gogo",
-                        Group = Group.IS03,
-                        DateOfBirth = DateTime.Now,
-                        AvgMark = 60,
-                        Work = null,
-                        Professor = i
-                    }
-                };
-            }
+            controller.SetView(new UI {_color = ConsoleColor.Blue})
+                .SetDefaultData()
+                .Build().GetAllProfessorsWorksItems();
 
-            var controller = new ControllerBuilder()
-                .SetView(new UI())
-                .SetCommandModel(new CommandModel(new GetAllPassedStudents()));
+            controller.SetView(new UI{_color = ConsoleColor.Green})
+                .Build().GetAllProfessorNames();
 
-            controller.Build().Click();
+            controller.SetView(new UI{_color = ConsoleColor.Magenta})
+                .Build().GetAllStudentsDates();
+
+            controller.SetView(new UI{_color = ConsoleColor.DarkBlue})
+                .Build().GetAllWorkItems();
+
+            controller.SetView(new UI{_color = ConsoleColor.DarkRed})
+                .Build().GetAllPassedStudentsNames();
+
+            controller.SetView(new UI{_color = ConsoleColor.Blue})
+                .Build().GetAllProfessorsWorksItems();
+
+            controller.SetView(new UI{_color = ConsoleColor.Yellow})
+                .Build().GetAllWorkMarksFromGroup(Group.IS02);
+
+            controller.SetView(new UI{_color = ConsoleColor.DarkMagenta})
+                .Build().GetGroupWithHighestWorkMark();
+
+            controller.SetView(new UI{_color = ConsoleColor.DarkYellow})
+                .Build().GetProfessorPositionByStudentName("student1");
+
+            controller.SetView(new UI{_color = ConsoleColor.White})
+                .Build().GetAllProfessorsNamesWithFailedStudents();
+
+            controller.SetView(new UI{_color = ConsoleColor.Green})
+                .Build().GetAllWorksMarksByProfessorName("professor1");
+
+            controller.SetView(new UI{_color = ConsoleColor.Cyan})
+                .Build().GetAllWorksItemsWhoseStudentOlderOfYear(2016);
+
+            controller.SetView(new UI {_color = ConsoleColor.Blue})
+                .SetDefaultData()
+                .Build().GetAllProfessorsWorksItems("professor1");
+
+            controller.SetView(new UI{_color = ConsoleColor.Red})
+                .Build().GetAllWorksMarksWhoseStudentProfessorIsAssociate();
+
+            controller.SetView(new UI{_color = ConsoleColor.DarkCyan})
+                .Build().GetDateOfTheOldestStudentWithAssistantProfessor();
+
             Console.ReadLine();
         }
     }

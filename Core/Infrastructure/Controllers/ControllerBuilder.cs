@@ -1,4 +1,4 @@
-using Core.Models;
+using Core.Infrastructure.Logic;
 using Core.View;
 
 namespace Core.Infrastructure.Controllers
@@ -12,9 +12,10 @@ namespace Core.Infrastructure.Controllers
             _controller = new Controller();
         }
 
-        public ControllerBuilder SetCommandModel(ICommandModel model)
+        public ControllerBuilder SetDefaultData()
         {
-            _controller.CommandModel = model;
+            _controller.CommandModel = new Command();
+            _controller.CommandModel.GenerateDefaultData();
             return this;
         }
 

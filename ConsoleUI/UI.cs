@@ -1,19 +1,19 @@
-using Core.Models;
+using Core.Infrastructure;
 using Core.View;
 
 namespace ConsoleApp1;
 
-public class UI : IView
+using static System.Console;
+public class UI : IConsoleView
 {
-    public UI(IEnumerable<Student> students, IEnumerable<Work> works, IEnumerable<Professor> professors, string result)
+    public ConsoleColor _color { get; set; }
+    public CommandResponseModel Result
     {
-        Students = students;
-        Works = works;
-        Professors = professors;
+        set
+        {
+            ForegroundColor = _color;
+            WriteLine($"Result of the method {value.MethodName}: \n{value.Result}");
+        }
     }
-
-    public IEnumerable<Student> Students { get; set; }
-    public IEnumerable<Work> Works { get; set; }
-    public IEnumerable<Professor> Professors { get; set; }
-    public string Result { get; set; }
+    public void WelcomeAction(string msg) => WriteLine("Hi! It`s Console View");
 }
