@@ -12,7 +12,7 @@ namespace Core
 
             controller.SetView(new UI {_color = ConsoleColor.Blue})
                 .SetDefaultData()
-                .Build().GetAllProfessorsWorksItems();
+                .Build().GetAllProfessorsWorksItems("Professor1");
 
             controller.SetView(new UI{_color = ConsoleColor.Green})
                 .Build().GetAllProfessorNames();
@@ -26,9 +26,6 @@ namespace Core
             controller.SetView(new UI{_color = ConsoleColor.DarkRed})
                 .Build().GetAllPassedStudentsNames();
 
-            controller.SetView(new UI{_color = ConsoleColor.Blue})
-                .Build().GetAllProfessorsWorksItems();
-
             controller.SetView(new UI{_color = ConsoleColor.Yellow})
                 .Build().GetAllWorkMarksFromGroup(Group.IS02);
 
@@ -36,20 +33,20 @@ namespace Core
                 .Build().GetGroupWithHighestWorkMark();
 
             controller.SetView(new UI{_color = ConsoleColor.DarkYellow})
-                .Build().GetProfessorPositionByStudentName("student1");
+                .Build().GetProfessorPositionByStudentName("Student1");
 
             controller.SetView(new UI{_color = ConsoleColor.White})
                 .Build().GetAllProfessorsNamesWithFailedStudents();
 
             controller.SetView(new UI{_color = ConsoleColor.Green})
-                .Build().GetAllWorksMarksByProfessorName("professor1");
+                .Build().GetAllWorksMarksByProfessorName("Professor1");
 
             controller.SetView(new UI{_color = ConsoleColor.Cyan})
                 .Build().GetAllWorksItemsWhoseStudentOlderOfYear(2016);
 
             controller.SetView(new UI {_color = ConsoleColor.Blue})
                 .SetDefaultData()
-                .Build().GetAllProfessorsWorksItems("professor1");
+                .Build().GetAllProfessorsWorksItems("Professor1");
 
             controller.SetView(new UI{_color = ConsoleColor.Red})
                 .Build().GetAllWorksMarksWhoseStudentProfessorIsAssociate();

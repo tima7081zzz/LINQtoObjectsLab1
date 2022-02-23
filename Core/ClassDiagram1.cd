@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Core.Infrastructure.Controllers.BaseController">
+    <Position X="7.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Infrastructure\Controllers\BaseController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Core.Infrastructure.Controllers.Controller">
+    <Position X="7.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAgAwAFAEAgAAAAAIAAEAAAQEAAAAAAICAAAAAAAAAA=</HashCode>
+      <FileName>Infrastructure\Controllers\Controller.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Core.Infrastructure.Controllers.ControllerBuilder">
+    <Position X="9.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAABAAgAAQAAAAAEAAAAA=</HashCode>
+      <FileName>Infrastructure\Controllers\ControllerBuilder.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Core.Infrastructure.Logic.Command" BaseTypeListCollapsed="true">
+    <Position X="11.25" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAgEwAFAFAAAAAAAIAAEAAAQEAAAAAAICAAAAAAAgAA=</HashCode>
+      <FileName>Infrastructure\Logic\Command.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Core.Infrastructure.CommandRequestModel">
+    <Position X="1.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAEAAA=</HashCode>
+      <FileName>Models\CommandRequestModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Core.Infrastructure.CommandResponseModel">
+    <Position X="3.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAACAAAAAAA=</HashCode>
+      <FileName>Models\CommandResponseModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Core.Models.Professor">
+    <Position X="3.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAAAIAgAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Professor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Core.Models.Student">
+    <Position X="1.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAEAAAAAAAIAAAAAAEACAAAAQAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Student.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Core.Models.Work">
+    <Position X="1.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAQAAAAAAAAAAAAAAEAAAAAAAAAACAAAAAAAA=</HashCode>
+      <FileName>Models\Work.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="Core.Infrastructure.Interfaces.ICommand">
+    <Position X="9.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAgEwAFAFAAAAAAAIAAEAAAQEAAAAAAICAAAAAAAgAA=</HashCode>
+      <FileName>Infrastructure\Logic\Interfaces\ICommand.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Core.View.IView">
+    <Position X="5.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAIAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>View\IView.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Core.View.IConsoleView">
+    <Position X="5.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>View\IView.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="Core.Infrastructure.Interfaces.Enums.Group">
+    <Position X="3.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAADgAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Infrastructure\Enums\Group.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Core.Infrastructure.Interfaces.Enums.Position">
+    <Position X="3.5" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAIAAAAAAAAA=</HashCode>
+      <FileName>Infrastructure\Enums\Position.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

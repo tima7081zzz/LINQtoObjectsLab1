@@ -11,11 +11,6 @@ namespace Core.Infrastructure.Logic
     {
         public CommandRequestModel _data { get; set; }
 
-        public List<string> GetAllProfessorsWorksItems()
-        {
-            return _data.Professors.FirstOrDefault()?.Students.Select(s => s.Work.Item).ToList();
-        }
-
         public List<int> GetAllWorksMarksWhoseStudentProfessorIsAssociate()
         {
             return _data.Works.Where(x => x.Student.Professor.Position == Position.Associate).Select(x => x.Mark).ToList();

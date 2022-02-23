@@ -6,14 +6,6 @@ namespace Core.Infrastructure.Controllers
 {
     public class Controller : BaseController
     {
-        public void GetAllProfessorsWorksItems()
-        {
-            View.Result = new CommandResponseModel
-            {
-                Result = CommandResponseStringConvert(CommandModel.GetAllProfessorsWorksItems()),
-                MethodName = System.Reflection.MethodBase.GetCurrentMethod()?.Name
-            };
-        }
         public void GetAllWorksMarksWhoseStudentProfessorIsAssociate()
         {
             View.Result = new CommandResponseModel

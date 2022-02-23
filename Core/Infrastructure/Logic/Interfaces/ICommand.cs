@@ -8,7 +8,6 @@ namespace Core.Infrastructure.Interfaces
     {
         CommandRequestModel _data { get; set; }
         void GenerateDefaultData();
-        List<string> GetAllProfessorsWorksItems();
         List<int> GetAllWorksMarksWhoseStudentProfessorIsAssociate();
         List<string> GetAllPassedStudentsNames();
         Group GetGroupWithHighestWorkMark();
