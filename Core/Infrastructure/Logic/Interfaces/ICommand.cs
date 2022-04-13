@@ -6,7 +6,6 @@ namespace Core.Infrastructure.Interfaces
 {
     public interface ICommand
     {
-        CommandRequestModel _data { get; set; }
         void GenerateDefaultData();
         List<int> GetAllWorksMarksWhoseStudentProfessorIsAssociate();
         List<string> GetAllPassedStudentsNames();

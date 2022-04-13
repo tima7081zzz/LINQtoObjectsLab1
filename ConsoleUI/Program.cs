@@ -1,8 +1,7 @@
-﻿using ConsoleApp1;
-using Core.Infrastructure.Controllers;
+﻿using Core.Infrastructure.Controllers;
 using Core.Infrastructure.Interfaces.Enums;
 
-namespace Core
+namespace ConsoleApp1
 {
     class Program
     {
