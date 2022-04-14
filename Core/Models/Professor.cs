@@ -1,5 +1,5 @@
 ﻿using System.Collections.Generic;
-using Core.Infrastructure.Interfaces.Enums;
+using Core.Infrastructure.Enums;
 
 namespace Core.Models
 {

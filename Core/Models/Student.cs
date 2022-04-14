@@ -1,5 +1,5 @@
-﻿using Core.Infrastructure.Interfaces.Enums;
-using System;
+﻿using System;
+using Core.Infrastructure.Enums;
 
 namespace Core.Models
 {

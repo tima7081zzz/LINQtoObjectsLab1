@@ -1,4 +1,4 @@
-using Core.Infrastructure.Interfaces;
+using Core.Infrastructure.Logic.Interfaces;
 using Core.View;
 
 namespace Core.Infrastructure.Controllers

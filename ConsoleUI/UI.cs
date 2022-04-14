@@ -1,4 +1,5 @@
 using Core.Infrastructure;
+using Core.Models;
 using Core.View;
 
 namespace ConsoleApp1;

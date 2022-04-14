@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Text;
-using Core.Infrastructure.Interfaces.Enums;
+using Core.Infrastructure.Enums;
+using Core.Models;
 
 namespace Core.Infrastructure.Controllers
 {

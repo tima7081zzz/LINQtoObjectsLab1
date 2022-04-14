@@ -1,7 +1,6 @@
 using System.Collections.Generic;
-using Core.Models;
 
-namespace Core.Infrastructure
+namespace Core.Models
 {
     public class CommandRequestModel
     {

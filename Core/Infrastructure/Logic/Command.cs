@@ -1,15 +1,15 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using Core.Infrastructure.Interfaces;
-using Core.Infrastructure.Interfaces.Enums;
+using Core.Infrastructure.Enums;
+using Core.Infrastructure.Logic.Interfaces;
 using Core.Models;
 
 namespace Core.Infrastructure.Logic
 {
     internal class Command : ICommand
     {
-        public CommandRequestModel _data { get; set; }
+        private CommandRequestModel _data { get; set; }
 
         public List<int> GetAllWorksMarksWhoseStudentProfessorIsAssociate()
         {

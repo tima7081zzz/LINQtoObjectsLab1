@@ -1,4 +1,4 @@
-﻿namespace Core.Infrastructure.Interfaces.Enums
+﻿namespace Core.Infrastructure.Enums
 {
     public enum Group
     {

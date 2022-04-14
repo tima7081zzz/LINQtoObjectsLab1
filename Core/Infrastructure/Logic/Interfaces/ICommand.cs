@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using Core.Infrastructure.Interfaces.Enums;
+using Core.Infrastructure.Enums;
 
-namespace Core.Infrastructure.Interfaces
+namespace Core.Infrastructure.Logic.Interfaces
 {
     public interface ICommand
     {

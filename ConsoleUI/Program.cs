@@ -1,5 +1,5 @@
 ﻿using Core.Infrastructure.Controllers;
-using Core.Infrastructure.Interfaces.Enums;
+using Core.Infrastructure.Enums;
 
 namespace ConsoleApp1
 {
